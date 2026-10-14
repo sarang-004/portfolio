@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sarang Brijesh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<noscript><style>#ld{display:none}</style></noscript>
+<style>
+:root{--g:#006039;--gd:#00281a;--p:#f1f4ee;--ink:#0d1a13;--mut:#52625a;--au:#c2a14d;--line:#c9d3c8;--tile:#fff;--hc:#006039;--pad:clamp(1.2rem,4vw,3.5rem);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--p:#0b1510;--ink:#e8efe6;--mut:#9db0a4;--line:#23362b;--tile:#12241a;--hc:#5cbf8e}}
+:root[data-theme=dark]{--p:#0b1510;--ink:#e8efe6;--mut:#9db0a4;--line:#23362b;--tile:#12241a;--hc:#5cbf8e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--ink);font:400 1.05rem/1.6 "Instrument Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--au);outline-offset:3px}
+html.cc,html.cc *{cursor:none!important}
+#ld{position:fixed;inset:0;z-index:200;background:#f1f4ee;color:var(--g);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:var(--pad);transition:transform .9s cubic-bezier(.77,0,.18,1);overflow:hidden;isolation:isolate}
+#ld.out{transform:translateY(-100%)}
+#water{position:absolute;z-index:0;left:0;right:0;bottom:0;height:0;background:var(--g);transition:height .16s linear;overflow:visible}
+#water:before{content:"";position:absolute;left:-5%;top:-18px;width:110%;height:36px;border-radius:50%;background:var(--g);animation:waterwave 2s ease-in-out infinite alternate}
+#water:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#ffffff0b,transparent 45%,#00281a24 100%)}
+#ld.filled{color:#f1f4ee}
+#load-label{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:baseline;width:min(24rem,80vw);padding:.8rem 1rem;border-radius:12px;background:#f1f4ee;color:var(--g);font:700 clamp(1.4rem,4vw,2rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+#load-word{display:inline-block}
+#cnt{font:500 1rem/1 "Instrument Sans",system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+#ld p{position:relative;z-index:1;margin:1rem 0 0;padding:.45rem .8rem;border-radius:8px;background:#f1f4ee;color:var(--g);font-size:1.1rem;text-align:center}
+@keyframes waterwave{from{transform:translateX(-2%) rotate(-2deg)}to{transform:translateX(2%) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){#water:before{animation:none}}
+#c1,#c2{position:fixed;left:0;top:0;pointer-events:none;z-index:150;border-radius:50%;display:none}
+.cc #c1,.cc #c2{display:block}
+#c1{width:8px;height:8px;margin:-4px;background:var(--au)}
+#c2{width:38px;height:38px;margin:-19px;border:1.5px solid var(--au);transition:width .25s,height .25s,margin .25s,background .25s}
+.hov #c2{width:72px;height:72px;margin:-36px;background:#c2a14d33}
+#light{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:100;display:flex;flex-direction:column;gap:6px;padding:8px 7px;border-radius:99px;background:#0d1a13d9}
+#light i{width:12px;height:12px;border-radius:50%;opacity:.25;transition:opacity .3s,box-shadow .3s}
+#light i:nth-child(1){background:#3ddc84}#light i:nth-child(2){background:#ffc83d}#light i:nth-child(3){background:#ff4d4d}
+#light i.on{opacity:1;box-shadow:0 0 10px currentColor}
+#light i:nth-child(1){color:#3ddc84}#light i:nth-child(2){color:#ffc83d}#light i:nth-child(3){color:#ff4d4d}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:6rem var(--pad) var(--pad);position:relative}
+.floaters{position:absolute;inset:0;overflow:hidden;pointer-events:none;color:var(--hc)}
+.floater{position:absolute;width:clamp(42px,6vw,76px);height:clamp(42px,6vw,76px);opacity:.17;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;fill:none;animation:drift 7s ease-in-out infinite alternate}
+.floater.laptop{left:49%;top:23%;width:clamp(52px,7vw,90px)}
+.floater.film{left:72%;top:52%;animation-delay:-2s}
+.floater.shirt{left:54%;top:68%;width:clamp(44px,5vw,68px);animation-delay:-4s}
+.floater.hanger{right:8%;top:66%;width:clamp(48px,6vw,76px);animation-delay:-1s}
+.floater.reel{left:84%;top:30%;width:clamp(38px,4vw,56px);animation-delay:-3s}
+@keyframes drift{from{transform:translate3d(0,-8px,0) rotate(-5deg)}to{transform:translate3d(8px,10px,0) rotate(5deg)}}
+.hero>*:not(.floaters){z-index:1}
+h1{font-size:clamp(3.4rem,14.5vw,13rem);line-height:.88;letter-spacing:-.03em;color:var(--hc);font-weight:800}
+.ln{display:block}.l{display:inline-block;white-space:pre}
+.lead{max-width:36ch;font-size:clamp(1.1rem,2vw,1.45rem);margin:1.6rem 0 1.8rem;line-height:1.45}
+.ph{position:absolute;right:var(--pad);top:clamp(2.5rem,8vh,5rem);width:clamp(110px,17vw,230px);aspect-ratio:3/4;border-radius:999px 999px 14px 14px;background:var(--g);color:#f1f4ee;display:grid;place-items:center;font:700 clamp(1.8rem,4vw,3rem) "Bricolage Grotesque",sans-serif;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;padding:.9em 1.7em;border-radius:99px;background:var(--g);color:#fff;text-decoration:none;font-weight:500;margin:0 .6rem .6rem 0;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.btn.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.story{background:var(--gd);color:#e9f1ea}
+.intro{padding:clamp(4rem,10vw,9rem) var(--pad) 2rem;max-width:62rem}
+h2{font-size:clamp(2rem,5vw,4.2rem);line-height:1.02;letter-spacing:-.02em;font-weight:700}
+.intro p{max-width:56ch;color:#b9cbbf;margin:1.2rem 0 0}
+.scroll{height:700vh;position:relative}
+.sticky{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem;padding:0 var(--pad)}
+.stage{display:grid;place-items:center}.stage svg{width:min(80%,400px);height:auto}
+.n{color:var(--au);font-weight:500;margin:0 0 .6rem}
+#sT{font-size:clamp(1.8rem,4vw,3.2rem);line-height:1.05;font-weight:700;margin:0 0 .8rem}
+#sX{max-width:38ch;color:#b9cbbf;margin:0;min-height:5em}
+.track{display:flex;gap:5px;margin-top:1.4rem;max-width:30rem}.track i{flex:1;height:4px;border-radius:2px;background:#ffffff2e;transition:background .3s}.track i.on{background:var(--au)}
+.work{padding:clamp(4rem,10vw,8rem) 0 0}
+.work .hd{padding:0 var(--pad) 1.5rem}.work .hd p{color:var(--mut);margin:.8rem 0 0}
+#pit{position:relative;padding:0 var(--pad) 3rem}
+#pit.static{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+#pit.phys{height:min(78vh,720px);min-height:560px;padding:0;margin:0 var(--pad);border-bottom:2px solid var(--ink)}
+.tile{background:var(--tile);border:1.5px solid var(--line);border-radius:18px;padding:1.15rem 1.25rem}
+.tile:first-child{background:var(--g);color:#f1f4ee;border-color:var(--g)}
+.tile h3{font-size:1.2rem;line-height:1.15;font-weight:700;margin-bottom:.45rem}.tile p{margin:0;font-size:.95rem;line-height:1.45;opacity:.9}
+.phys .tile{position:absolute;left:0;top:0;width:min(290px,80vw);touch-action:none;user-select:none;will-change:transform}
+.more{padding:clamp(4rem,9vw,8rem) var(--pad)}
+dl{margin:2rem 0 0;max-width:62rem}
+dl div{display:grid;grid-template-columns:minmax(120px,1fr) 3fr;gap:1.5rem;padding:1.3rem 0;border-top:1.5px solid var(--line)}
+dt{font:700 1.2rem "Bricolage Grotesque",sans-serif;color:var(--hc)}dd{margin:0;max-width:56ch}
+.contact{background:var(--g);color:#f1f4ee;padding:clamp(4rem,10vw,8rem) var(--pad) 3rem}
+.contact h2{max-width:14ch}.contact p{max-width:40ch;margin:1rem 0 2rem;color:#cfe3d6}
+.contact .btn{background:#f1f4ee;color:var(--gd)}.contact .btn.alt{background:transparent;color:#f1f4ee;box-shadow:inset 0 0 0 1.5px #f1f4ee}
+@media(max-width:760px){.sticky{grid-template-columns:1fr;align-content:center;gap:1rem}.stage svg{width:min(48%,200px)}dl div{grid-template-columns:1fr;gap:.3rem}.ph{top:1.2rem}}
+@media(max-width:760px){.floater.laptop{left:53%;top:24%}.floater.film{left:75%;top:57%}.floater.shirt{left:49%;top:75%}.floater.hanger{right:5%;top:76%}.floater.reel{left:82%;top:35%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.floater{animation:none}}
+</style></head>
+<body>
+<div id="ld" aria-hidden="true"><div id="water"></div><div id="load-label"><span id="load-word">Loading</span><span id="cnt">1%</span></div><p>Sarang Brijesh</p></div>
+<div id="c1"></div><div id="c2"></div>
+<div id="light" role="img" aria-label="Toastmasters timing light: green, yellow, red as you scroll" title="Toastmasters timing light"><i class="on"></i><i></i><i></i></div>
+
+<header class="hero">
+  <div class="floaters" aria-hidden="true">
+    <svg class="floater laptop" viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="30" rx="3"/><path d="M6 49h52l-5 5H11zM20 48h24"/></svg>
+    <svg class="floater film" viewBox="0 0 64 64"><rect x="10" y="15" width="44" height="34" rx="4"/><path d="M10 24h44M10 40h44M20 15v9m12-9v9m12-9v9M20 40v9m12-9v9m12-9v9"/><path d="m28 28 10 6-10 6z"/></svg>
+    <svg class="floater shirt" viewBox="0 0 64 64"><path d="m23 13 9-4 9 4 13 9-8 10-6-5v27H24V27l-6 5-8-10z"/><path d="M23 13c2 7 16 7 18 0"/></svg>
+    <svg class="floater hanger" viewBox="0 0 64 64"><path d="M29 17a5 5 0 1 1 8 4c-2 2-5 3-5 7v2"/><path d="m6 41 24-14a5 5 0 0 1 5 0l23 14a2 2 0 0 1-1 4H8a2 2 0 0 1-2-4z"/></svg>
+    <svg class="floater reel" viewBox="0 0 64 64"><circle cx="32" cy="32" r="23"/><circle cx="32" cy="32" r="5"/><circle cx="32" cy="19" r="5"/><circle cx="43" cy="38" r="5"/><circle cx="21" cy="38" r="5"/></svg>
+  </div>
+  <div class="ph"><img id="photo" alt="Sarang Brijesh" hidden><span>SB</span></div>
+  <h1 aria-label="Sarang Brijesh"><span class="ln" aria-hidden="true" data-t="Sarang"></span><span class="ln" aria-hidden="true" data-t="Brijesh"></span></h1>
+  <p class="lead">Co-founder and COO of Kinsuk, studying CS and data science at VIT Vellore. I build the AI and the systems that give used clothes a second life.</p>
+  <div><a class="btn" data-mag href="#work">See the work</a><a class="btn alt" data-mag href="#contact">Get in touch</a></div>
+</header>
+
+<section class="story" aria-labelledby="kh">
+  <div class="intro">
+    <h2 id="kh">How a donated shirt becomes a resold one</h2>
+    <p>Kinsuk grades the condition of every donated garment with AI and gives it a permanent KIN-ID, so it stays traceable through each reuse. We have collected 50+ post-consumer garments, work with upcycling designers, and hold a SVAP grant from UTIF and VITTBI. Scroll to follow one garment through the loop.</p>
+  </div>
+  <div class="scroll" id="sc"><div class="sticky">
+    <div class="stage"><svg viewBox="0 0 200 200" role="img" aria-label="A shirt changing colour as it moves through the loop">
+      <path id="tee" d="M60 30 L85 20 Q100 38 115 20 L140 30 L180 70 L155 92 L140 80 V175 H60 V80 L45 92 L20 70 Z" fill="#8c918d"/>
+      <path id="sw" d="M62 128 H138" stroke="#c2a14d" stroke-width="3" stroke-dasharray="7 6" opacity="0" fill="none"/>
+      <g id="tag" opacity="0"><rect x="78" y="92" width="44" height="24" rx="3" fill="#f1f4ee"/><text x="100" y="108" font-size="9.5" font-weight="700" text-anchor="middle" fill="#00281a" font-family="sans-serif">KIN-ID</text></g>
+    </svg></div>
+    <div><p class="n" id="sN"></p><h3 id="sT"></h3><p id="sX"></p><div class="track" id="tr" aria-hidden="true"></div></div>
+  </div></div>
+</section>
+
+<section class="work" id="work">
+  <div class="hd"><h2>Things I've built</h2><p id="hint">Machine learning, NLP and systems work. Drag the tiles around.</p></div>
+  <div id="pit">
+    <article class="tile"><h3>Garment condition grading</h3><p>EfficientNetB4 transfer learning on a secondhand clothing dataset, at 96.24% validation accuracy. It is the model behind the KIN-ID.</p></article>
+    <article class="tile"><h3>Resume bias auditor</h3><p>BERT screening with counterfactual tests for Indian hiring: college tier, name proxies, employment gaps and city tier. Streamlit interface.</p></article>
+    <article class="tile"><h3>Opinion mining on The Odyssey</h3><p>About 470 cleaned Letterboxd reviews, analysed with TF-IDF, LSA and sentiment, with tag ranking in a Streamlit dashboard.</p></article>
+    <article class="tile"><h3>Dementia care tracking</h3><p>An NFC-based smart object tracking system for dementia patients, built with two teammates for the TARP course.</p></article>
+    <article class="tile"><h3>Soft computing</h3><p>A fuzzy inference system that predicts student performance, and a genetic algorithm that schedules timetables.</p></article>
+    <article class="tile"><h3>Smaller builds</h3><p>Blockchain, farm-to-customer tracking and subscription management projects on GitHub, plus Django REST backend work.</p></article>
+  </div>
+</section>
+
+<section class="more">
+  <h2>Beyond the code</h2>
+  <dl>
+    <div><dt>Speaking</dt><dd>Toastmasters, District 120. Club President, Assistant Area Director for PR, and five area-level contest placements, several of them first place. The light in the corner is the same one used on stage.</dd></div>
+    <div><dt>Research</dt><dd>I read the India textile circularity reports from the Ministry of Textiles, FICCI and PIB to understand where waste, sorting and policy get stuck.</dd></div>
+    <div><dt>Experience</dt><dd>Intern at Beveron Technologies, Dubai. Co-founder and COO at Kinsuk.</dd></div>
+    <div><dt>Education</dt><dd>Integrated M.Tech in Computer Science and Data Science, VIT Vellore, 2023 to 2028. Oracle OCI AI Foundations and Generative AI Professional certification prep.</dd></div>
+    <div><dt>Films</dt><dd>I log everything on Letterboxd, and it is also where my text mining data comes from.</dd></div>
+  </dl>
+</section>
+
+<footer class="contact" id="contact">
+  <h2>The light is red. Time to talk.</h2>
+  <p>If you are hiring, investing, or building in circular fashion, I would like to hear from you.</p>
+  <a class="btn" data-mag href="https://kinsuk.com">kinsuk.com</a><a class="btn alt" data-mag href="https://github.com/sarang-004">GitHub</a><a class="btn alt" data-mag href="https://letterboxd.com/poochameen">Letterboxd</a>
+</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],cl=(v,a,b)=>Math.min(b,Math.max(a,v));
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,fine=matchMedia('(pointer:fine)').matches;
+// loader
+const ld=$('#ld');
+if(rm)ld.remove();else{let n=0;const t=setInterval(()=>{n=Math.min(100,n+Math.ceil(Math.random()*7));$('#water').style.height=`${n}%`;$('#cnt').textContent=`${n}%`;ld.classList.toggle('filled',n>54);if(n===100){clearInterval(t);setTimeout(()=>{ld.classList.add('out');setTimeout(()=>ld.remove(),950)},250)}},60)}
+// name letters
+$$('[data-t]').forEach(s=>{s.innerHTML=[...s.dataset.t].map(c=>`<span class="l">${c}</span>`).join('')});
+const L=$$('.l');let mx=0,my=0,seen=false;
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;seen=true});
+function wave(t){if(scrollY<innerHeight*1.2)L.forEach((el,i)=>{let w,d=0;
+ if(seen&&fine){const r=el.getBoundingClientRect();d=Math.exp(-Math.hypot(mx-r.left-r.width/2,my-r.top-r.height/2)/260);w=250+600*d}
+ else w=300+420*(.5+.5*Math.sin(t/800-i*.6));
+ el.style.fontVariationSettings=`"wght" ${w|0},"wdth" ${(75+25*(seen&&fine?d:.7))|0}`})}
+if(rm)L.forEach(el=>el.style.fontVariationSettings='"wght" 800,"wdth" 100');
+// cursor + magnets
+let tx=0,ty=0,rx=0,ry=0;const c1=$('#c1'),c2=$('#c2'),mags=$$('[data-mag]');
+if(fine&&!rm){document.documentElement.classList.add('cc');
+ addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;c1.style.transform=`translate(${tx}px,${ty}px)`;
+  document.documentElement.classList.toggle('hov',!!e.target.closest('a,button,[data-mag],.tile'));
+  mags.forEach(m=>{m.style.transform='';const r=m.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2;
+   if(Math.hypot(dx,dy)<r.width*.75)m.style.transform=`translate(${dx*.3}px,${dy*.4}px)`})});
+ document.addEventListener('pointerleave',()=>mags.forEach(m=>m.style.transform=''))}
+// story
+const S=[["Prep a QR-coded bag","Each donation bag gets its own QR code before it goes out."],["Donor scans and fills the form","The donor scans the bag and describes what is inside."],["Drop the bag off","The bag goes to a collection point."],["Lab collects it","Bags travel to the Kinsuk lab."],["Open and verify","Garments are checked against the donor's form."],["Accept or reject","Only garments that can live again move on."],["Assign a work code","G is good to go, S stitching, R resize, D dye, U upcycle, B buttons and zips."],["Print the KIN-ID","An iron-on label gives the garment a permanent digital identity."],["Route to work zones","Each garment goes where its code says."],["Fix and upcycle","Tailors and designers repair, dye and redesign."],["Prepare for sale","A hang tag and QR code carry the story."],["Resell, ID stays inside","The KIN-ID stays in the garment for its next cycle."]];
+const tr=$('#tr');tr.innerHTML=S.map(()=>'<i></i>').join('');const dots=$$('#tr i');let cur=-1;
+const sc=$('#sc'),tee=$('#tee'),tag=$('#tag'),sw=$('#sw');
+function story(){const r=sc.getBoundingClientRect(),p=cl(-r.top/(r.height-innerHeight),0,.999),i=Math.floor(p*12);
+ tee.setAttribute('fill',`rgb(${140-48*p|0},${145+46*p|0},${141+1*p|0})`);
+ if(i!==cur){cur=i;$('#sN').textContent=`Step ${i+1} of 12`;$('#sT').textContent=S[i][0];$('#sX').textContent=S[i][1];
+  dots.forEach((d,k)=>d.classList.toggle('on',k<=i));tag.setAttribute('opacity',i>=7?1:0);sw.setAttribute('opacity',i>=9?1:0)}}
+// light + scroll
+const lt=$$('#light i');let tick=false;
+function onScroll(){const p=cl(scrollY/(document.documentElement.scrollHeight-innerHeight),0,1),k=p<.55?0:p<.85?1:2;
+ lt.forEach((d,i)=>d.classList.toggle('on',i===k));story()}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(()=>{tick=false;onScroll()})}},{passive:true});onScroll();
+// physics tiles
+const pit=$('#pit'),tiles=[...pit.children].map(el=>({el,x:0,y:0,vx:0,vy:0,w:0,h:0,drag:false}));
+if(fine&&!rm){pit.classList.add('phys');let run=false,z=1;
+ const place=()=>{const W=pit.clientWidth;tiles.forEach((t,i)=>{t.w=t.el.offsetWidth;t.h=t.el.offsetHeight;t.x=Math.random()*(W-t.w);t.y=-t.h-i*190;t.vx=t.vy=0})};
+ const step=()=>{const W=pit.clientWidth,H=pit.clientHeight;
+  tiles.forEach(t=>{if(t.drag)return;t.vy+=.6;t.x+=t.vx;t.y+=t.vy;t.vx*=.99;
+   if(t.x<0){t.x=0;t.vx*=-.5}if(t.x+t.w>W){t.x=W-t.w;t.vx*=-.5}
+   if(t.y+t.h>H){t.y=H-t.h;t.vy*=-.35;t.vx*=.92;if(Math.abs(t.vy)<1.2)t.vy=0}});
+  for(let k=0;k<2;k++)for(let i=0;i<tiles.length;i++)for(let j=i+1;j<tiles.length;j++){const a=tiles[i],b=tiles[j];
+   const dx=a.x+a.w/2-b.x-b.w/2,dy=a.y+a.h/2-b.y-b.h/2,ox=(a.w+b.w)/2-Math.abs(dx),oy=(a.h+b.h)/2-Math.abs(dy);if(ox<=0||oy<=0)continue;
+   const fa=a.drag?0:b.drag?1:.5,fb=b.drag?0:a.drag?1:.5;
+   if(oy<ox){const s=dy<0?-1:1;a.y+=s*oy*fa;b.y-=s*oy*fb;if(s<0){if(a.vy>0)a.vy*=-.2}else if(b.vy>0)b.vy*=-.2}
+   else{const s=dx<0?-1:1;a.x+=s*ox*fa;b.x-=s*ox*fb;a.vx+=s*.3;b.vx-=s*.3}}
+  tiles.forEach(t=>t.el.style.transform=`translate(${t.x}px,${t.y}px) rotate(${cl(t.vx*.5,-7,7)}deg)`)};
+ const loop=()=>{if(!run)return;step();requestAnimationFrame(loop)};
+ new IntersectionObserver(([e])=>{if(e.isIntersecting&&!run){if(!tiles[0].w)place();run=true;loop()}else if(!e.isIntersecting)run=false},{threshold:.25}).observe(pit);
+ tiles.forEach(t=>{let ox=0,oy=0;
+  t.el.addEventListener('pointerdown',e=>{const r=pit.getBoundingClientRect();t.drag=true;t.vx=t.vy=0;ox=e.clientX-r.left-t.x;oy=e.clientY-r.top-t.y;t.el.setPointerCapture(e.pointerId);t.el.style.zIndex=++z});
+  t.el.addEventListener('pointermove',e=>{if(!t.drag)return;const r=pit.getBoundingClientRect(),nx=cl(e.clientX-r.left-ox,0,pit.clientWidth-t.w),ny=cl(e.clientY-r.top-oy,-200,pit.clientHeight-t.h);t.vx=nx-t.x;t.vy=ny-t.y;t.x=nx;t.y=ny});
+  const up=()=>{t.drag=false};t.el.addEventListener('pointerup',up);t.el.addEventListener('pointercancel',up)});
+ addEventListener('resize',()=>tiles.forEach(t=>{t.x=cl(t.x,0,Math.max(0,pit.clientWidth-t.w))}))
+}else $('#hint').textContent='Machine learning, NLP and systems work.';
+// frame loop
+(function f(t){rx+=(tx-rx)*.16;ry+=(ty-ry)*.16;c2.style.transform=`translate(${rx}px,${ry}px)`;if(!rm)wave(t);requestAnimationFrame(f)})(0);
+})();
+</script>
+</body></html>
